@@ -179,7 +179,7 @@ MonoBehaviour:
         m_CallState: 2
   canInteract: 1
   doorPivot: {fileID: 8381284335227315005}
-  openRot: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  openRot: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
   closeRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &7127974196609207992
 PrefabInstance:
