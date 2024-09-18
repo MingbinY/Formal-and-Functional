@@ -16,6 +16,7 @@ public class ShopKeeper : Interactable
         markImage.SetActive(false);
         hiddenPathHint.SetActive(true);
         wallToHide.SetActive(false);
+        doorToShow.gameObject.SetActive(true);
         doorToShow.canInteract = true;
     }
 
