@@ -4,12 +4,27 @@ using UnityEngine;
 
 public class Door : Interactable
 {
-    public GameObject doorPivot;
-    public Quaternion openRot;
-    public Quaternion closeRot;
+    public GameObject doorR;
+    public GameObject doorL;
+
+    public Quaternion openRot_R;
+    public Quaternion closeRot_R;
+
+    public Quaternion openRot_L;
+    public Quaternion closeRot_L;
+
+    public Material unlockedMat;
+    public Material lockedMat;
 
     public void DoorInteraction()
     {
-        doorPivot.transform.rotation = doorPivot.transform.rotation == openRot ? closeRot : openRot;
+        doorR.transform.localRotation = doorR.transform.localRotation == openRot_R ? closeRot_R : openRot_R;
+        doorL.transform.localRotation = doorL.transform.localRotation == openRot_L ? closeRot_L : openRot_L;
+    }
+
+    private void Update()
+    {
+        doorR.GetComponent<MeshRenderer>().material = canInteract ? unlockedMat : lockedMat;
+        doorL.GetComponent<MeshRenderer>().material = canInteract ? unlockedMat : lockedMat;
     }
 }
