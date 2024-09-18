@@ -8,6 +8,8 @@ public class Interactable : MonoBehaviour
     public UnityEvent onInteractEvent;
     public bool canInteract = true;
 
+    public string interactionHintText = "";
+
     public void TriggerInteractEvent()
     {
         if (canInteract)

@@ -178,6 +178,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   canInteract: 1
+  interactionHintText: Open The Door
   doorPivot: {fileID: 8381284335227315005}
   openRot: {x: 0, y: 0.70710677, z: 0, w: -0.70710677}
   closeRot: {x: 0, y: 0, z: 0, w: 0}
